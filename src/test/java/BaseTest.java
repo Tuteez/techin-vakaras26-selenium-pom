@@ -14,6 +14,7 @@ public class BaseTest {
         options.addArguments("--headless=new");
         options.setAcceptInsecureCerts(true);
         driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
         driver.get("https://opencart.abstracta.us/");
     }
 
