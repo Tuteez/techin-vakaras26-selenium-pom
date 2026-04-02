@@ -12,7 +12,6 @@ public class RegisterTest extends BaseTest {
     RegisterPage registerPage;
     YourAccountHasBeenCreated yourAccountHasBeenCreated;
 
-
     @Test
     void userCanRegister() {
         homePage = new HomePage(driver);
@@ -20,7 +19,7 @@ public class RegisterTest extends BaseTest {
         yourAccountHasBeenCreated = new YourAccountHasBeenCreated(driver);
         String pass = "12345";
         DataGenerator.generateEmail();
-        homePage.clickMyAccountLink();
+//        homePage.clickMyAccountLink();
         homePage.clickRegisterLink();
         registerPage.typeFirstName("John");
         registerPage.typeLastName("Doe");
